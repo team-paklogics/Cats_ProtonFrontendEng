@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "Libre";
+  src: url("../font/LibreFranklin-VariableFont_wght.ttf") format("woff2"); /* Modern Browsers */
+  
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: var(--product-gray-white, #fff);
+
+  /* Line / Bottom / Grey 200 */
+  box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+}
+.nav-left {
+  color: var(--product-gray-darkest, #333);
+
+  /* text-2xl/600 Semibold */
+  font-family: "Libre";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 2rem;  */
+  letter-spacing: 0.03rem;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+.icon-text {
+  position: absolute;
+  top: 1.6rem;
+  left: 0.9rem;
+  font-family: "Libre";
+  font-size: 12px;
+}
+.nav-right:last-child {
+  color: var(--product-gray-darkest, #333);
+  font-family: "Libre";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 1.5rem;  */
+  /* cursor: pointer; */
+}
+main {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+  background-color: #f4f4f4;
+  /* height: 100vh; */
+  /* width: 100%; */
+  overflow-x: hidden;
+}
+.toolbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.reset-btn {
+  cursor: pointer;
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.375rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--product-gray-lightish, #b6b6b6);
+  background: var(--product-gray-white, #fff);
+}
+.reset-btn span {
+  color: var(--product-gray-darker, #4f4f4f);
+  text-align: center;
+
+  /* text-base/700 Bold */
+  font-family: "Libre";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.03rem;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cat-container {
+    width: 250px;
+    height: 250px;
+    padding: 24px;
+    background: white;
+    border-radius: 4px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 6px;
+    display: inline-flex;
+    position: relative;
+  }
+  .cat-sub-container {
+    align-self: stretch;
+    height: 246px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+  }
+  .cat-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    align-self: stretch;
+    height: 122px;
+    background: linear-gradient(0deg, #D9D9D9 0%, #D9D9D9 100%);
+    position: relative;
+    display: inline-block;
+  }
+  .text-container {
+    align-self: stretch;
+    height: 108px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
+    display: flex;
+  }
+  .text-heading {
+    color: #333333;
+    font-size: 20px;
+    font-family: "Libre";
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+  .text-content {
+    align-self: stretch;
+    color: #333333;
+    font-size: 14px;
+    font-family: "Libre";
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+  .heart-image {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .heart-icon {
+    width: 30px; /* Adjust according to your design */
+    height: 30px; /* Adjust according to your design */
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }

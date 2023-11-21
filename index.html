@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Challenge</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="header">
+        <h1 class="nav-left">Cats!</h1>
+        <div class="nav-right">
+            <img src="./assets/Icons/headerIcon.svg" alt="header Icon">
+            <div id="favoriteCounter" class="icon-text">0</div>
+            <div>Favorites</div>  
+        </div>
+    </nav>
+
+    <!-- Main section -->
+ 
+    <main>
+        <!-- toolbar -->
+        <div class="toolbar">
+            <!-- reset button -->
+            <button class="reset-btn" onclick= resetHearts()>
+                <span>Reset</span>
+
+            </button>
+         
+
+        </div>
+        <div class="main-container" id="catGrid">
+            <!-- Content will be dynamically generated here -->
+        </div>
+
+    </main>
+    <!-- File containing all the logic for the page -->
+    <script src="./index.js"></script>
+</body>
+</html>
